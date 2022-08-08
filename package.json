@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha script_test.js --watch",
-    "start": "http-server . -p 8000 -o -c-1"
+    "start": "http-server . -p 8000 -o -c-1",
+    "server": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.18.1"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "http-server": "^0.12.3",

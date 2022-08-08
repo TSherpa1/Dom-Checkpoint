@@ -179,6 +179,11 @@ if (typeof process === "undefined") {
     buyButtonClick(event, data);
   });
 
+  const saveButton = document.getElementsByClassName("save_button");
+  saveButton.addEventListener("click", (event) => {
+    window.localStorage.setItem
+  });
+
   // Call the tick function passing in the data object once per second
   setInterval(() => tick(data), 1000);
 }
